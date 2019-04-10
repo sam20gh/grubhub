@@ -1,0 +1,27 @@
+<br/><br/><br/><br/><br/>
+<div class="container">
+
+  <!-- Portfolio Item Heading -->
+  <h1 class="my-4"><%= @customer.name %>
+    <small>Customer info</small>
+  </h1>
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col-md-6">
+      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+    </div>
+
+    <div class="col-md-6">
+      <button type="button" class="btn btn-danger"><%= link_to "Back to main!", customers_path%></button>
+      <h3 class="my-3">Customer Info</h3>
+      <h4><strong>Name:</strong> <br/><%= @customer.name %></h4>
+      <p><strong>Date of Birth:</strong><br/> <%= @customer.dob %></p>
+      <p><strong>Bio: </strong><br/><%= @customer.bio %></p>
+     
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
